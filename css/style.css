@@ -171,14 +171,29 @@ hr {
 	}
 
 	.main-article {
-		width: 60%;
 		border-radius: 0.6rem;
 		margin: 0;
 	}
 
 	.main-sidebar {
-		width: 40%;
+		width: 100%;
 		border-radius: 0.6rem;
 		margin: 0;
+	}
+
+	.grid-container {
+		display: grid; 
+		grid-template-columns: 3fr 1fr;
+		grid-template-rows: 1fr; 
+		grid-gap: 10px; 
+	}
+
+	.item-1 {
+		grid-area: 1 / 1 / span 1 / span 1; 
+	}
+
+	.item-2 {
+		grid-area: 1 / 2 / span 1 / span 1; 
+		 
 	}
 }
